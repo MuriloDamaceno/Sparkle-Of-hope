@@ -1,0 +1,1 @@
+sala_destino = noone; // definido na Creation Code de cada instância

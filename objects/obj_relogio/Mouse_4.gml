@@ -7,6 +7,6 @@ if (global.caixa_aberta) {
         global.caixa_aberta = true;
         global.caixa_texto = "Já está tarde...";
     } else {
-        show_debug_message("Já está tarde...");
+        show_debug_message("Preciso chegar mais perto!");
     }
 }
