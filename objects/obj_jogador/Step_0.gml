@@ -1,9 +1,13 @@
+if (place_meeting(x, y, obj_solido)) {
+    show_debug_message("COLIDINDO agora - x=" + string(x) + " y=" + string(y));
+}
+
 var _moving = false;
 var _kb_input = keyboard_check(vk_right) || keyboard_check(vk_left) || keyboard_check(vk_up) || keyboard_check(vk_down)
             || keyboard_check(ord("D")) || keyboard_check(ord("A")) || keyboard_check(ord("W")) || keyboard_check(ord("S"));
 
 if (_kb_input) {
-    has_target = false;
+    has_target = false;	
 }
 
 if (keyboard_check(vk_right) || keyboard_check(ord("D"))) {
@@ -83,6 +87,7 @@ y = clamp(y, floor_top, room_height - 3);
 
 last_x = x;
 last_y = y;
+show_debug_message("x=" + string(x) + " has_target=" + string(has_target) + " target_x=" + string(target_x) + " stuck=" + string(stuck_timer) + " indo_porta=" + string(global.indo_para_porta));
 
 
 if (_moving) {
